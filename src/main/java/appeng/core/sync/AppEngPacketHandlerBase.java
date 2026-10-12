@@ -16,6 +16,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import appeng.core.sync.packets.PacketAssemblerAnimation;
+import appeng.core.sync.packets.PacketChannelAlert;
 import appeng.core.sync.packets.PacketClick;
 import appeng.core.sync.packets.PacketClickOrDragFakeSlot;
 import appeng.core.sync.packets.PacketColorSelect;
@@ -164,7 +165,8 @@ public class AppEngPacketHandlerBase {
         PACKET_SUPER_WIRELESS_TOOL_COMMAND(PacketWirelessToolCommand.class),
         PACKET_CRAFTING_DIAGNOSTIC_RESET(PacketCraftingDiagnosticReset.class),
         PACKET_HIGHLIGHT_ITEM_FLOW(PacketHighlightItemFlow.class),
-        PACKET_FLOW_RATES(PacketFlowRates.class);
+        PACKET_FLOW_RATES(PacketFlowRates.class),
+        PACKET_CHANNEL_ALERT(PacketChannelAlert.class);
 
         private final Class<? extends AppEngPacket> packetClass;
         private final Constructor<? extends AppEngPacket> packetConstructor;
